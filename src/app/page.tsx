@@ -7,7 +7,6 @@ import { Menu, X } from "@deemlol/next-icons";
 import Link from "next/link";
 import { useState } from "react";
 
-
 export default function Home() {
 
   const [menu, setMenu] = useState<boolean>(false)

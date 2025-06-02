@@ -91,7 +91,9 @@ export default function Map() {
                       riverIndex == 0 ? "Pessimo" : riverIndex == 1 ? "Medio" : riverIndex == 2 ? "Otimo" : "??" 
                       
                     }</div>
-                    <div className={`w-5 h-5 ${riverIndex == 0 ? "bg-red-500" : riverIndex == 1 ? "bg-yellow-500" : riverIndex == 2 ? "bg-green-500" : "invisible" } rounded-full`}/>
+                    <div className={`w-6 h-6 ${riverIndex == 0 ? "bg-red-500" : riverIndex == 1 ? "bg-yellow-500" : riverIndex == 2 ? "bg-green-500" : "invisible" } flex justify-center items-center text-white rounded-full`}>
+                        {riverIndex == 0 ? "1" : riverIndex == 1 ? "2" : riverIndex == 2 ? "3" : "" }
+                      </div>
                   </div>
                 </div>
                 <div className="flex flex-col w-1/3 justify-center mr-5">

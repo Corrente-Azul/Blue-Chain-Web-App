@@ -68,13 +68,11 @@ export default function InfoRivers({params}:{ params: Promise<{ id: number }>}) 
                 <div className="flex flex-col w-full justify-center items-start pl-5 gap-5">
                   <div className=" text-neutral-50 max-lg:text-xl text-2xl font-bold font-['Inter']">{rivers[id].name}</div>
                   <div className="flex flex-row justify-between items-center w-full">
-                    <div className=" text-neutral-50/75 text-lg font-normal font-['Inter']">Indice: {
-                       
-                        rivers[id].index == 0 ? "Pessimo" : rivers[id].index == 1 ? "Medio" : rivers[id].index == 2 ? "Otimo" : "??" 
-
+                    <div className=" text-neutral-50/75 text-lg font-normal font-['Inter']">Indice: { 
+                      rivers[id].index == 0 ? "Pessimo" : rivers[id].index == 1 ? "Medio" : rivers[id].index == 2 ? "Otimo" : "??" 
                     }</div>
                     <div className={`w-6 h-6 ${rivers[id].index == 0 ? "bg-red-500" : rivers[id].index == 1 ? "bg-yellow-500" : rivers[id].index == 2 ? "bg-green-500" : "invisible" } flex justify-center items-center text-white rounded-full`}>
-                    2
+                    {rivers[id].index  == 0 ? "1" : rivers[id].index  == 1 ? "2" : rivers[id].index  == 2 ? "3" : "" }
                     </div>
                   </div>
                 </div>
