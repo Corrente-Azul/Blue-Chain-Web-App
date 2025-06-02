@@ -1,8 +1,8 @@
 'use client'
 
-import Footer from "@/components/footer"
-import NavBar from "@/components/navBar"
-import SlideMenu from "@/components/slideMenu"
+import Footer from "@/components/Footer/Footer"
+import NavBar from "@/components/NavBar/NavBar"
+import SlideMenu from "@/components/SlideMenu/SlideMenu"
 import { useState } from "react"
 
 export default function About() {

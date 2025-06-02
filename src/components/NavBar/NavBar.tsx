@@ -3,17 +3,18 @@ import Link from "next/link";
 import { MouseEventHandler, useState } from "react";
 
 type TNavBar = {
-    toggleMenu: MouseEventHandler<SVGElement>
+    toggleMenu: MouseEventHandler<SVGElement>,
+    isInfo?: boolean
 }
 
-export default function NavBar({toggleMenu}:TNavBar){
+export default function NavBar({toggleMenu, isInfo = false}:TNavBar){
     return(
         <div className="w-full h-20 sm:h-40 relative bg-slate-900/30 flex justify-between items-center z-50">
-            <div className="ml-5 sm:ml-10 flex flex-row justify-center items-center gap-5">
-                <Link href="/">
-                    <img className="w-20 h-20 sm:w-40 sm:h-40 cursor-pointer transition-all duration-200 hover:scale-120" src="images/Logo.png" />
+            <div className="ml-5 sm:ml-10 flex flex-row justify-center items-center sm:gap-5">
+                <Link className="sm:max-md:w-full sm:max-md:h-max" href="/">
+                    <img className="w-20 h-20 sm:w-40 sm:h-40 cursor-pointer transition-all duration-200 hover:scale-120" src={isInfo ? `../images/Logo.png` : `images/Logo.png`} />
                 </Link>
-                <p className="justify-center text-neutral-50 text-sm sm:text-xl font-medium font-['Inter'] leading-loose max-lg:invisible max-sm:visible">Corrente Azul SP</p>
+                <p className="text-neutral-50 w-56 text-sm sm:text-xl font-medium font-['Inter'] leading-loose max-lg:invisible max-sm:visible">Corrente Azul SP</p>
             </div>
             <div className="w-3/5 md:w-2/5 lg:w-3/10 h-14 flex justify-around items-center mr-10 max-sm:hidden">
                 <Link href="/about">
