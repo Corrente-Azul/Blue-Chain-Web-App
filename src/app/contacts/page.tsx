@@ -39,20 +39,20 @@ export default function Contacts() {
       <NavBar toggleMenu={() => toggleMenu()}/>
       <SlideMenu toggleMenu={() => toggleMenu()} slidebg={slidebg} slidecontent={slidecontent}/>
       <div
-        className="w-full h-[45rem] absolute flex items-end justify-end top-0 z-0 bg-[url(/images/River.jpg)] bg-cover bg-center"
+        className="w-full h-[45rem] absolute flex items-center justify-center top-0 z-0 bg-[url(/images/River.jpg)] bg-cover bg-center"
       >
-        <div className="w-full flex justify-center items-center z-30 gap-10 p-48">
+        <div className="w-full flex justify-center items-center z-30 gap-10">
           <div className="flex flex-col justify-center items-center gap-10">
-            <div className="text-center text-neutral-50 max-lg:text-6xl text-7xl font-bold font-['Inter']">CONTATE-NOS</div>
-            <div className="text-center text-neutral-50 max-lg:text-6xl text-7xl font-bold font-['Inter']">...</div>
-            <div className="text-center text-neutral-50/75 max-lg:text-lg text-2xl font-normal font-['Inter'] leading-relaxed">Precisa de ajuda? Tem alguma recomendação? Use um dos meios de comunicação abaixo para nos informar.</div>
+            <div className="text-center text-neutral-50 max-lg:text-6xl text-7xl font-bold font-['Inter'] max-sm:text-4xl">CONTATE-NOS</div>
+            <div className="text-center text-neutral-50 max-lg:text-6xl text-7xl font-bold font-['Inter'] max-sm:text-xl">...</div>
+            <div className="text-center text-neutral-50/75 max-lg:text-lg text-2xl font-normal font-['Inter'] leading-relaxed max-sm:text-base">Precisa de ajuda? Tem alguma recomendação? Use um dos meios de comunicação abaixo para nos informar.</div>
           </div>
         </div>
       </div>
       <div className="w-full h-[41rem] flex max-xl:flex-col-reverse justify-center items-center z-30 gap-10 px-30">
       </div>
       <div className="w-full xl:h-[40rem]  flex max-xl:flex-col justify-center items-center z-30 gap-20 px-30">
-        <div className="xl:w-1/4 xl:h-[30rem] md:w-[40rem] md:h-[45rem] sm:w-[30rem] sm:h-[40rem] w-[25rem] h-[30rem] flex flex-col items-center bg-[#121A35] rounded-4xl xl:gap-6 sm:gap-12 gap-6 p-10">
+        <div className="xl:w-1/4 xl:h-[30rem] md:w-[40rem] md:h-[45rem] sm:w-[30rem] sm:h-[40rem] w-[25rem] h-[30rem] max-sm:w-[15rem] max-sm:h-[30rem] flex flex-col items-center bg-[#121A35] rounded-4xl xl:gap-6 sm:gap-12 gap-6 p-10">
           <img src="images/chat.svg" className="max-md:w-48 max-xl:w-56 max-sm:w-32"  />
           <div className="text-center text-neutral-50 max-sm:text-2xl max-md:text-3xl max-xl:text-4xl text-xl font-bold font-['Inter']">ENVIE SUA MENSAGEM</div>
           <div className="flex flex-col w-full gap-10 ">
@@ -63,7 +63,7 @@ export default function Contacts() {
             <div className="justify-center text-slate-900 text-lg font-medium font-['Inter'] leading-9">Enviar</div>
           </div>
         </div>
-        <div className="xl:w-1/4 xl:h-[30rem] md:w-[40rem] md:h-[45rem] sm:w-[30rem] sm:h-[40rem] w-[25rem] h-[30rem] flex flex-col items-center bg-[#121A35] rounded-4xl xl:gap-6 sm:gap-12 gap-6 p-10">
+        <div className="xl:w-1/4 xl:h-[30rem] md:w-[40rem] md:h-[45rem] sm:w-[30rem] sm:h-[40rem] max-sm:w-[15rem] max-sm:h-[30rem] flex flex-col items-center bg-[#121A35] rounded-4xl xl:gap-6 sm:gap-12 gap-6 p-10">
           <img src="images/letter.svg" className="max-md:w-48 max-xl:w-56 max-sm:w-32"  />
           <div className="text-center text-neutral-50 max-sm:text-2xl max-md:text-3xl max-xl:text-4xl text-xl font-bold font-['Inter']">ENVIE SUA MENSAGEM</div>
           <div className="flex flex-col w-full gap-10 justify-center items-center">
@@ -73,7 +73,7 @@ export default function Contacts() {
             <div className="justify-center text-slate-900 text-lg font-medium font-['Inter'] leading-9">Copiar</div>
           </div>
         </div>
-        <div className="xl:w-1/4 xl:h-[30rem] md:w-[40rem] md:h-[45rem] sm:w-[30rem] sm:h-[40rem] w-[25rem] h-[30rem] flex flex-col items-center bg-[#121A35] rounded-4xl xl:gap-6 sm:gap-12 gap-6 p-10">
+        <div className="xl:w-1/4 xl:h-[30rem] md:w-[40rem] md:h-[45rem] sm:w-[30rem] sm:h-[40rem] max-sm:w-[15rem] max-sm:h-[30rem] flex flex-col items-center bg-[#121A35] rounded-4xl xl:gap-6 sm:gap-12 gap-6 p-10">
           <img src="images/call.svg" className="max-md:w-48 max-xl:w-56 max-sm:w-32"  />
           <div className="text-center text-neutral-50 max-sm:text-2xl max-md:text-3xl max-xl:text-4xl text-xl font-bold font-['Inter']">ENVIE SUA MENSAGEM</div>
           <div className="flex flex-col w-full gap-10 justify-center items-center">

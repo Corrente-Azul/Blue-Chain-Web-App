@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --breakpoint-xs: 375px;
   --breakpoint-3xl: 1900px;
   --breakpoint-4xl: 2560px;
   --breakpoint-5xl: 3400px;

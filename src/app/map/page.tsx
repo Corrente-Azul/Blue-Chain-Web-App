@@ -78,12 +78,12 @@ export default function Map() {
             <div className="md:h-full 2xl:w-5/7 xl:w-2/3 lg:w-7/12 md:w-6/12 w-full h-[40rem]">
               <MyMap transformCard={transformCard}/>
             </div>
-            <div className="md:h-full 2xl:w-2/7 xl:w-1/3 lg:w-5/12 md:w-7/12 w-full sm:h-[45rem] h-[40rem] flex flex-col border-solid border-2 border-[#034078] rounded-2xl p-5">
-              <div className=" w-full h-5/7 rounded-2xl">
+            <div className="md:h-full 2xl:w-2/7 xl:w-1/3 lg:w-5/12 md:w-7/12 w-full sm:h-[45rem] h-[40rem] flex flex-col border-solid border-2 border-[#034078] max-sm:gap-5 rounded-2xl p-5">
+              <div className=" w-full h-5/7 rounded-2xl ">
                 <img className="w-full h-full rounded-2xl" src={riverImage} style={{ objectFit: 'cover' }} />
               </div>
-              <div className="h-2/7 w-full flex">
-                <div className="flex flex-col w-2/3 justify-center items-start pl-5 gap-5">
+              <div className="h-3/7 w-full flex max-sm:flex-col max-sm:justify-center max-sm:gap-10">
+                <div className="flex flex-col w-2/3 max-sm:w-full justify-center items-start pl-5 gap-5">
                   <div className=" text-neutral-50 max-lg:text-xl text-2xl font-bold font-['Inter']">{riverName}</div>
                   <div className="flex flex-row justify-center items-center gap-3">
                     <div className=" text-neutral-50/75 text-lg font-normal font-['Inter']">Indice: {
@@ -96,10 +96,10 @@ export default function Map() {
                       </div>
                   </div>
                 </div>
-                <div className="flex flex-col w-1/3 justify-center mr-5">
+                <div className="flex flex-col w-1/3 justify-center mr-5 max-sm:w-full max-sm:items-center ">
                   <Link href={riverId != undefined ? `/inforivers/${riverId}` : "/map"}>
-                    <div className="w-32 h-14 bg-white flex justify-center items-center rounded-2xl">
-                      <div className="justify-center text-slate-900 text-lg font-medium font-['Inter'] leading-9">Ver Detalhes</div>
+                    <div className="w-24 sm:w-32 h-14 bg-white flex justify-center items-center rounded-2xl">
+                      <div className="justify-center text-slate-900 text-xs sm:text-lg font-medium font-['Inter'] leading-9">Ver Detalhes</div>
                     </div>
                   </Link>
                 </div>

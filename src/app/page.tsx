@@ -53,12 +53,12 @@ export default function Home() {
       <SlideMenu toggleMenu={() => toggleMenu()} slidebg={slidebg} slidecontent={slidecontent}/>
       <div className="w-full h-8/12 sm:h-7/12 flex flex-col fixed justify-center items-center lg:justify-start lg:items-start gap-12 lg:ml-20 lg:mt-10 z-30">
         <div className="flex flex-col lg:justify-start lg:items-start justify-center items-center gap-12">
-          <div className="justify-start text-neutral-50 max-lg:text-6xl text-7xl font-bold font-['Inter']">Corrente Azul</div>
-          <div className="w-5/12 max-lg:text-center text-neutral-50/75 max-lg:text-lg text-xl font-normal font-['Inter'] leading-relaxed">Venha conosco em busca de conhecer as melhores e mais atualizadas informações sobre os rios da cidade de São Paulo</div>
+          <div className="justify-start text-neutral-50 max-xs:text-2xl max-sm:text-3xl max-lg:text-6xl text-7xl font-bold font-['Inter']">Corrente Azul</div>
+          <div className="w-5/12 max-lg:text-center text-neutral-50/75 max-xs:text-sm max-sm:text-base max-lg:text-lg text-xl font-normal font-['Inter'] leading-relaxed">Venha conosco em busca de conhecer as melhores e mais atualizadas informações sobre os rios da cidade de São Paulo</div>
         </div>
         <Link href="/rivers">
           <div className="lg:px-7 lg:py-5 px-5 py-3 bg-cyan-700 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] inline-flex justify-start items-center gap-2 cursor-pointer transition-all duration-200 hover:scale-120">
-            <div className="justify-center text-slate-900 text-2xl lg:text-2xl font-medium font-['Inter'] leading-9">Ver Rios</div>
+            <div className="justify-center text-slate-900 text-xl sm:text-2xl font-medium font-['Inter'] leading-9">Ver Rios</div>
           </div>
         </Link>
       </div>
