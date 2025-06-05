@@ -30,33 +30,33 @@ export default function InfoRivers({params}:{ params: Promise<{ id: number }>}) 
   const id = paramsUnwraped.id
 
   return (
-    <div className="flex flex-col items-center w-full xl:h-screen h-full bg-[#0A1128]">
+    <div className="flex flex-col items-center w-full h-full bg-[#0A1128]">
         <NavBar isInfo toggleMenu={() => toggleMenu()}/>
         <SlideMenu isInfo toggleMenu={() => toggleMenu()} slidebg={slidebg} slidecontent={slidecontent}/>
-        <div className="w-full xl:h-7/12 h-auto flex max-xl:flex-col-reverse justify-center rounded-2xl items-center gap-12 xl:gap-20 2xl:gap-30 m-20 mt-10 z-30">
+        <div className="w-full xl:[50rem] h-auto flex max-xl:flex-col-reverse justify-center rounded-2xl items-center gap-12 xl:gap-20 2xl:gap-30 m-20 mt-10 z-30">
             <div className="md:w-[40rem] sm:w-[30rem] w-[18rem] flex flex-col h-[18rem] sm:h-[30rem] md:h-[40rem] gap-2">
               <div className="w-full h-1/3 flex  rounded-2xl gap-2">
                 <div className="w-1/3 h-full rounded-2xl bg-[#1282A2] flex justify-center items-center">
-                  <p className=" text-neutral-50 text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-sm">pH: {rivers[id].props.ph ?? "??"}</p>
+                  <p className=" text-neutral-50 text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-xs">pH: {rivers[id].props.ph ?? "??"}</p>
                 </div>
                 <div className="w-2/3 h-full rounded-2xl bg-[#FEFCFB] flex justify-center items-center">
-                  <p className=" text-[#0A1128] text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-sm">Oxigenio Dissolvido(mg/L): {rivers[id].props.oxigen ?? "??"}</p>
+                  <p className=" text-[#0A1128] text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-xs">Oxigenio Dissolvido(mg/L): {rivers[id].props.oxigen ?? "??"}</p>
                 </div>
               </div>
               <div className="w-full h-1/3 flex rounded-2xl gap-2 justify-center items-center">
                 <div className="w-2/3 h-full rounded-2xl bg-[#FEFCFB] flex justify-center items-center max-sm:text-base">
-                  <p className=" text-[#0A1128] text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-sm">Condutvidade Eletrica(µS/cm): {rivers[id].props.conductivity ?? "??"}</p>
+                  <p className=" text-[#0A1128] text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-xs">Condutvidade Eletrica(µS/cm): {rivers[id].props.conductivity ?? "??"}</p>
                 </div>
                 <div className="w-1/3 h-full rounded-2xl bg-[#1282A2] flex justify-center items-center">
-                  <p className=" text-neutral-50 text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-sm">Turbidez: {rivers[id].props.turbidity ?? "??"}</p>
+                  <p className=" text-neutral-50 text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-xs">Turbidez: {rivers[id].props.turbidity ?? "??"}</p>
                 </div>
               </div>
               <div className="w-full h-1/3 flex rounded-2xl gap-2">
                 <div className="w-1/3 h-full rounded-2xl bg-[#1282A2] flex justify-center items-center">
-                    <p className=" text-neutral-50 text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-sm">Temperatura: {rivers[id].props.temperature ?? "??"}ºC</p>
+                    <p className=" text-neutral-50 text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-xs">Temperatura: {rivers[id].props.temperature ?? "??"}ºC</p>
                 </div>
                 <div className="w-2/3 h-full rounded-2xl bg-[#FEFCFB] flex justify-center items-center">
-                    <p className=" text-[#0A1128] text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-sm">Precipitação(mm): {rivers[id].props.pluviometrics ?? "??"}</p>
+                    <p className=" text-[#0A1128] text-center max-lg:text-xl text-2xl font-semibold font-['Inter'] max-sm:text-xs">Precipitação(mm): {rivers[id].props.pluviometrics ?? "??"}</p>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function InfoRivers({params}:{ params: Promise<{ id: number }>}) 
               </div>
             </div>
         </div>
-        <div className="flex justify-start items-center w-full max-xl:h-40">
+        <div className="flex justify-start items-center w-full h-40">
             <div className="w-4/7 text-neutral-50/75 max-sm:text-lg text-xl font-normal font-['Inter'] leading-relaxed ml-15 max-xs:text-base">Criado por: <br/>Henrique, Higor, João, Julio e Vinicius.</div>
         </div>
     </div>
