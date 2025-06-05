@@ -73,7 +73,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <div className="flex justify-start items-center w-full max-lg:h-[10rem] max-lg:mb-20 z-50">
+      <div className="flex justify-start items-center w-full h-[10rem] max-lg:mb-20 z-50">
         <div className="lg:w-4/7 text-neutral-50/75 max-sm:text-lg text-xl font-normal font-['Inter'] leading-relaxed mx-15">Criado por: <br/>Henrique, Higor, João, Julio e Vinicius.</div>
       </div>
     </div>
