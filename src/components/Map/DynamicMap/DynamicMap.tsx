@@ -17,7 +17,7 @@ function DynamicMap({transformCard}:TDynamicMap) {
     <>
         {
           typeof window !== 'undefined' ?
-          <MapContainer className="w-full h-full" center={[-23.6089, -46.6388]} zoom={10} scrollWheelZoom>
+          <MapContainer className="w-full h-full" center={[-23.2089, -46.8388]} zoom={9} scrollWheelZoom>
             <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
             <Marker position={[-23.50138, -46.5416]} eventHandlers={{click: () => {transformCard("tiete")}}}>
               <Popup>
@@ -37,6 +37,46 @@ function DynamicMap({transformCard}:TDynamicMap) {
             <Marker position={[-23.682855129251784, -46.730845959253145]} eventHandlers={{click: () => {transformCard("guarapiranga")}}}>
               <Popup>
                 <p className="text-center">Reservatorio Guarapiranga <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-23.3981, -46.6586]} eventHandlers={{click: () => {transformCard("claras")}}}>
+              <Popup>
+                <p className="text-center">Reservatório Águas Claras <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-23.5764, -46.2894]} eventHandlers={{click: () => {transformCard("taiacup")}}}>
+              <Popup>
+                <p className="text-center">Reservatório Taiaçupeba <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-23.1500, -47.0572]} eventHandlers={{click: () => {transformCard("itupeva")}}}>
+              <Popup>
+                <p className="text-center">Rio Jundiaí <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-23.3678, -45.8783]} eventHandlers={{click: () => {transformCard("branca")}}}>
+              <Popup>
+                <p className="text-center">Rio Paraíba do Sul <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-23.4133, -47.4617]} eventHandlers={{click: () => {transformCard("sorocaba")}}}>
+              <Popup>
+                <p className="text-center">Rio Sorocaba <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-22.9056, -46.5425]} eventHandlers={{click: () => {transformCard("jaguari")}}}>
+              <Popup>
+                <p className="text-center">Rio Jaguari <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-23.1039, -46.5456]} eventHandlers={{click: () => {transformCard("atibaia")}}}>
+              <Popup>
+                <p className="text-center">Rio Atibaia <br /> Selecionado</p>
+              </Popup>
+            </Marker>
+            <Marker position={[-22.7033, -47.6006]} eventHandlers={{click: () => {transformCard("piracicaba")}}}>
+              <Popup>
+                <p className="text-center">Rio Piracicaba <br /> Selecionado</p>
               </Popup>
             </Marker>
           </MapContainer>

@@ -1,6 +1,5 @@
 'use client'
 
-import Footer from "@/components/Footer/Footer"
 import NavBar from "@/components/NavBar/NavBar"
 import SlideMenu from "@/components/SlideMenu/SlideMenu"
 import { useState } from "react"
@@ -9,20 +8,20 @@ export default function About() {
 
   const [menu, setMenu] = useState<boolean>(false)
     
-      const [slidebg, setSlidebg] = useState<string>("invisible")
-    
-      const [slidecontent, setSlidecontent] = useState<string>("translate-x-full")
-    
-      function toggleMenu(){
-        if(!menu){
-          setSlidebg("visible")
-          setSlidecontent("translate-x-0")
-          setMenu(!menu)
-        }else{
-          setSlidebg("invisible")
-          setSlidecontent("translate-x-full")
-          setMenu(!menu)
-        }
+  const [slidebg, setSlidebg] = useState<string>("invisible")
+
+  const [slidecontent, setSlidecontent] = useState<string>("translate-x-full")
+
+  function toggleMenu(){
+    if(!menu){
+      setSlidebg("visible")
+      setSlidecontent("translate-x-0")
+      setMenu(!menu)
+    }else{
+      setSlidebg("invisible")
+      setSlidecontent("translate-x-full")
+      setMenu(!menu)
+    }
   }
 
   return (

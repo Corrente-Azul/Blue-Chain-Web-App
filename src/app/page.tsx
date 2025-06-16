@@ -1,6 +1,5 @@
 'use client'
 
-import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import SlideMenu from "@/components/SlideMenu/SlideMenu";
 import { Menu, X } from "@deemlol/next-icons";
